@@ -39,12 +39,33 @@
         ans:--  
 
 
-
+        <hr>
         <hr>
 
         ques:-- How do you switch/navigate form one component to another in React?
 
-        ans:-- using react Router
+        ans:-- 1. Link
+        Link is used to manage the navigation and it worked as an anchor tag. Check below code for the demonstration.
+
+       <b> {
+        "import { Link } from 'react-router-dom';
+...
+...
+<Link to="/about">About</Link>"
+    }</b>
+
+
+        2. NavLink
+NavLink behaves the same as Link but in addition, it comes with a new attribute called “activeClassName” which helps us to add the class to the anchor tag when page url will match.
+
+
+
+<b>{
+    "import { NavLink } from 'react-router-dom';
+    ...
+    ...
+    <NavLink activeClassName="active" to="/about">About</NavLink>"
+}</b>
 
         <hr>
 
@@ -70,6 +91,7 @@
 React class component is called as a stateful component.
 Stateful component plays with all life cycle methods of React.
 This component will modify state.
+
 
 
     </pre>
